@@ -12,7 +12,7 @@ var db *sql.DB
 //this function is executed before rest of the functionality is called
 func init(){
 	var err error
-	db, err = sql.Open("postgres",  "postgres://edtuser:.BlackWhiteWithAccent@edt-postgres-server-dev.postgres.database.azure.com/edtsqldev?sslmode=disable")
+	db, err = sql.Open("postgres",  "connection string here..")
 
 	if err != nil {
 		panic(err.Error())
